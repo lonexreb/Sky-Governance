@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-jetbrains-mono: "JetBrains Mono";
+  --small-text: Inter;
+
+  /* font sizes */
+  --small-text-size: 16px;
+  --body-text-size: 20px;
+  --font-size-smi: 13px;
+  --font-size-sm: 14px;
+  --subheading-size: 24px;
+  --title-1-size: 64px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-crimson: #e64646;
+  --color-blueviolet: rgba(74, 67, 236, 0.2);
+  --title: #334151;
+
+  /* Spacing */
+  --spacing-m: 48px;
+  --spacing-xs: 8px;
+
+  /* Gaps */
+  --gap-7xs: 6px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-lg: 18px;
+  --padding-base: 16px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+  --br-9xs: 4px;
+
+  /* Effects */
+  --button-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.c1-icon,
+.c1-icon1 {
+  position: absolute;
+  top: -41px;
+  left: 967px;
+  width: 753px;
+  height: 608px;
+  object-fit: cover;
+}
+.c1-icon1 {
+  top: 588px;
+  left: -158px;
+}
+.skygovernance {
+  position: absolute;
+  top: 48px;
+  left: 80px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.buttons-icon {
+  width: 40px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  height: 40px;
+  object-fit: cover;
+}
+.social-icons {
+  position: absolute;
+  top: 48px;
+  right: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-xs);
+}
+.divider {
+  position: absolute;
+  top: 0.5px;
+  left: 79.5px;
+  border-top: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  width: 1281px;
+  height: 1px;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  top: 917px;
+  right: 0;
+  left: 0;
+  background-color: var(--color-white);
+  height: 169px;
+  overflow: hidden;
+}
+.or-create-account,
+.sign-in {
+  position: absolute;
+  left: 299px;
+  text-align: center;
+  width: 842px;
+}
+.sign-in {
+  top: 284px;
+  font-size: var(--title-1-size);
+  letter-spacing: -0.02em;
+  display: inline-block;
+}
+.or-create-account {
+  top: 385px;
+  font-size: var(--subheading-size);
+  line-height: 150%;
+  color: #828282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log-in {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  background-color: transparent; /* Makes the background transparent */
+  border: none; /* Removes any border */
+  color: inherit; /* Keeps the text color as inherited from the parent */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  padding: 10px 20px; /* Adds some padding for better click area */
+  text-align: center; /* Centers the text */
+  
+}
+.button-new {
+  position: absolute;
+  top: 150px;
+  left: -55px;
+  box-shadow: var(--button-shadow);
+  border-radius: var(--br-5xs);
+  background-color: #6d7bfb;
+  width: 467px;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xl) 32px;
+  box-sizing: border-box;
+  color: var(--color-white);
+}
+.email {
+  flex: 1;
+  position: relative;
+  line-height: 125%;
+  opacity: 0.5;
+  border: none;
+  outline:none;
+}
+
+.password{
+  flex: 1;
+  position: relative;
+  line-height: 125%;
+  opacity: 0.5;
+  border: none;
+  outline:none;
+}
+.input-field,
+.input-field-wrapper {
+  position: absolute;
+  width: 353px;
+  height: 53px;
+}
+.input-field {
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-blueviolet);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-lg) var(--padding-base);
+}
+.input-field-wrapper {
+  top: 458px;
+  left: 540px;
+  font-size: var(--small-text-size);
+  color: var(--title);
+}
+.forgot-password {
+  position: absolute;
+  top: 123px;
+  left: 300px;
+  font-size: var(--font-size-sm);
+  line-height: 125%;
+  color: var(--title);
+  width: 40%;
+}
+.icon,
+.title {
+  position: relative;
+}
+.title {
+  width: 65px;
+  line-height: 125%;
+  display: none;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.input-field1 {
+  width: 353px;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-blueviolet);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-lg) var(--padding-base);
+  gap: var(--gap-3xs);
+  font-size: var(--small-text-size);
+  color: var(--title);
+}
+.error {
+  width: 31px;
+  position: relative;
+  font-size: var(--font-size-smi);
+  line-height: 125%;
+  font-weight: 500;
+  color: var(--color-crimson);
+  display: none;
+}
+.input {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  border-radius: 6px;
+  width: 361px;
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-sm);
+}
+.button,
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button {
+  box-shadow: var(--button-shadow);
+  border-radius: var(--br-5xs);
+  background-color: var(--color-black);
+  justify-content: center;
+  padding: 14px var(--padding-5xl);
+  cursor: pointer;
+  font-size: var(--small-text-size);
+  color: var(--color-white);
+}
+.items {
+  position: absolute;
+  top: 56px;
+  right: 110px;
+  justify-content: flex-end;
+  gap: var(--spacing-m);
+}
+.skygovernance1 {
+  position: absolute;
+  top: 45px;
+  left: 80px;
+  font-size: 50px;
+  line-height: 150%;
+  font-weight: 800;
+  font-family: var(--font-jetbrains-mono);
+}
+.navigation,
+.sign-in-frame {
+  width: 100%;
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 164px;
+}
+.sign-in-frame {
+  position: relative;
+  height: 1086px;
+  text-align: left;
+  font-size: var(--body-text-size);
+  color: var(--color-black);
+  font-family: var(--small-text);
+}
+
+#rightcld{
+  rotate: 180deg;
+}

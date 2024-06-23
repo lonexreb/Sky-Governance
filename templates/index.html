@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='index_styles.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="landing-page-01">
+        <div class="landing-page-main-frame">
+          <img
+            class="landing-page-main-frame-child"
+            alt=""
+            src= "{{url_for('static', filename='gradient3.png')}}"
+          />
+
+          <div class="copy-wrapper">
+            <div class="copy">
+              <b class="optimal-data-governance">Optimal Data Governance</b>
+              <div class="where-data-meets">Where data meets governance</div>
+              <div class="button" id="buttonContainer">
+                <a id="signbttn" href="{{url_for('signin')}}"><div class="sign-up">Sign Up</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="items">
+            <div class="sign-up">Services</div>
+            <div class="sign-up">Prices</div>
+            <div class="sign-up">About Us</div>
+            <div class="button1" id="buttonContainer">
+                <a id="signbttn" href="{{url_for('signin')}}"><div class="sign-up">Sign In</div></a>
+            </div>
+          </div>
+          <div class="skygovernance">SkyGovernance</div>
+        </div>
+        <div class="copy1">
+          <div class="customer-reviews">Why SkyGovern?</div>
+          <div class="skygovern-is-assured">
+            SkyGovern is assured to improve your data governance score by at
+            least double its original amount
+          </div>
+          <div class="button2">
+            <div class="sign-up">Learn More</div>
+          </div>
+        </div>
+        <img class="image-2-icon" alt="" src="{{url_for('static', filename='stats.png')}}" />
+
+        <div class="navigation-footer">
+          <div class="skygovern-inc">SkyGovern Inc</div>
+          <div class="social-icons">
+            <img
+              class="buttons-icon"
+              alt=""
+              src="./public/buttons--icon@2x.png"
+            />
+
+            <img
+              class="buttons-icon"
+              alt=""
+              src="./public/buttons--icon@2x.png"
+            />
+
+            <img
+              class="buttons-icon"
+              alt=""
+              src="./public/buttons--icon@2x.png"
+            />
+
+            <img
+              class="buttons-icon"
+              alt=""
+              src="./public/buttons--icon@2x.png"
+            />
+          </div>
+          <div class="divider"></div>
+        </div>
+        <div class="copy2">
+          <div class="customer-reviews">How does it work?</div>
+          <div class="powered-by-state">
+            Powered by state of the art LLMs and cloud services, GovernAI is
+            assured to
+          </div>
+          <div class="button2">
+            <div class="sign-up">Learn More</div>
+          </div>
+        </div>
+        <img class="image-3-icon" alt="" src="{{url_for('static', filename='stats2.png')}}" />
+      </div>
+    </div>
+
+    <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          // Please sync "Sign In Frame" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

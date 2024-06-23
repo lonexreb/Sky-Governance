@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='dashboard_styles.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Mono:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <img class="c1-icon" alt="" src="{{ url_for('static', filename='c1-icon1.png') }}" />
+
+      <div class="group-parent">
+        <div class="copy-parent">
+          <div class="copy">
+            <b class="current-departments">Current Departments</b>
+          </div>
+          <div class="tag">
+            <div class="label">Marketing</div>
+          </div>
+          <div class="tag1">
+            <div class="label">Engineering</div>
+          </div>
+          <div class="tag2">
+            <div class="label">Accounting</div>
+          </div>
+          <div class="copy">
+            <b class="current-departments">Current Departments</b>
+          </div>
+          <div class="tag">
+            <div class="label">Marketing</div>
+          </div>
+          <div class="tag1">
+            <div class="label">Engineering</div>
+          </div>
+          <div class="tag2">
+            <div class="label">Accounting</div>
+          </div>
+          <div class="copy2">
+            <b class="current-departments">Current Clouds</b>
+          </div>
+          <div class="tag6">
+            <div class="label">Dropbox</div>
+          </div>
+          <div class="tag7">
+            <div class="label">Microsoft Cloud Services</div>
+          </div>
+          <div class="tag8">
+            <div class="label">AWS</div>
+          </div>
+          <div class="secondary-button">
+            <div class="add-department-wrapper">
+              <div class="add-department">Add Department</div>
+            </div>
+          </div>
+          <div class="secondary-button1">
+            <div class="add-department-wrapper">
+              <div class="add-department">Add Cloud</div>
+            </div>
+          </div>
+        </div>
+        <div class="secondary-button2">
+          <div class="add-department-wrapper">
+            <a href="{{url_for('loading')}}"><div class="add-department">Run Diagnose</div></a>
+          </div>
+        </div>
+      </div>
+      <img class="c1-icon1" id="rightcld" alt="" src="{{ url_for('static', filename='c1-icon1.png') }}" />
+
+      <div class="book">
+        <img class="cover-back-icon" alt="" src= "{{ url_for('static', filename='governingbook.png') }}" />
+
+        <div class="cover-front">
+        </div>
+      </div>
+      <div class="skygovernance">SkyGovernance</div>
+    </div>
+  </body>
+</html>

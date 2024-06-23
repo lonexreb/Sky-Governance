@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --small-text: Inter;
+    --font-jetbrains-mono: "JetBrains Mono";
+  
+    /* font sizes */
+    --small-text-size: 16px;
+    --font-size-5xl: 24px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray-100: rgba(255, 255, 255, 0);
+    --color-gainsboro: #e0e0e0;
+  
+    /* Paddings */
+    --padding-sm: 14px;
+    --padding-5xl: 24px;
+    --padding-xs: 12px;
+    --padding-base: 16px;
+  
+    /* Border radiuses */
+    --br-53xl: 72px;
+    --br-5xs: 8px;
+    --br-base: 16px;
+    --br-9xs: 4px;
+    --br-5xl: 24px;
+  
+    /* Effects */
+    --button-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+
+  .skygovernance {
+    position: absolute;
+    top: 45px;
+    left: 80px;
+    font-size: 50px;
+    line-height: 150%;
+    font-weight: 800;
+    font-family: var(--font-jetbrains-mono);
+  }
+  .vector-icon,
+  .vector-icon1,
+  .vector-icon2 {
+    position: absolute;
+    height: 11.6%;
+    width: 7.85%;
+    top: 28.96%;
+    right: 84.38%;
+    bottom: 59.43%;
+    left: 7.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-icon1,
+  .vector-icon2 {
+    top: 69.02%;
+    bottom: 19.37%;
+  }
+  .vector-icon2 {
+    top: 48.64%;
+    bottom: 39.76%;
+  }
+  .group-child {
+    background-color: var(--color-gray-100);
+    border: 4px solid var(--color-black);
+    box-sizing: border-box;
+  }
+  .group-child,
+  .rectangle-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 793px;
+    height: 793px;
+  }
+  .label {
+    flex: 1;
+    position: relative;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .reply {
+    position: absolute;
+    width: calc(100% - 48.3px);
+    right: 24.3px;
+    bottom: 23.8px;
+    left: 24px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro);
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px var(--padding-base);
+  }
+  .what-edits-were {
+    flex: 1;
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .what-edits-were-implemented-im-wrapper {
+    border-radius: var(--br-base) var(--br-base) var(--br-9xs) var(--br-base);
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xs) var(--padding-base);
+    box-sizing: border-box;
+    max-width: 480px;
+  }
+  .bubble {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .oh-wrapper {
+    border-radius: var(--br-5xl) var(--br-base) var(--br-base) var(--br-9xs);
+    background-color: var(--color-gainsboro);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xs) var(--padding-base);
+    box-sizing: border-box;
+    max-width: 480px;
+  }
+  .bubbles,
+  .messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .bubbles {
+    align-self: stretch;
+    gap: 8px;
+    color: var(--color-black);
+  }
+  .messages {
+    position: absolute;
+    width: calc(100% - 48.3px);
+    right: 24.3px;
+    bottom: 283.8px;
+    left: 24px;
+    height: 347px;
+    gap: 35px;
+    color: var(--color-white);
+  }
+  .mr-nance {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .person,
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .person {
+    position: absolute;
+    top: 29px;
+    left: 112px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .notodetective-icon {
+    top: 8px;
+    left: 29px;
+    width: 61px;
+    height: 64px;
+  }
+  .chat-header,
+  .conversation,
+  .notodetective-icon {
+    position: absolute;
+    overflow: hidden;
+  }
+  .chat-header {
+    width: calc(100% - 0.3px);
+    top: 0;
+    right: 0.3px;
+    left: 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid #020202;
+    box-sizing: border-box;
+    height: 80px;
+    color: var(--color-black);
+  }
+  .conversation {
+    height: calc(100% - 42.2px);
+    width: calc(100% - 38.7px);
+    top: 23.04px;
+    right: 23.43px;
+    bottom: 19.16px;
+    left: 15.27px;
+    background-color: var(--color-gray-100);
+  }
+  .group-parent {
+    position: absolute;
+    top: 155px;
+    left: 313px;
+    width: 793px;
+    height: 793px;
+    font-size: var(--small-text-size);
+    color: #828282;
+  }
+  .edited-files,
+  .incomecsv,
+  .namescsv,
+  .salescsv {
+    position: absolute;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    text-align: center;
+    display: inline-block;
+  }
+  .edited-files {
+    top: 186px;
+    left: 80px;
+    font-weight: 600;
+    width: 176px;
+    height: 40px;
+  }
+  .incomecsv,
+  .namescsv,
+  .salescsv {
+    top: 426px;
+    left: 98px;
+    width: 136px;
+    height: 32px;
+  }
+  .incomecsv,
+  .salescsv {
+    top: 621px;
+  }
+  .incomecsv {
+    top: 823px;
+    left: 100px;
+  }
+  .implement-changes {
+    position: relative;
+    line-height: 150%;
+  }
+  .button,
+  .button1 {
+    position: absolute;
+    top: 548px;
+    left: 1168px;
+    box-shadow: var(--button-shadow);
+    border-radius: var(--br-5xs);
+    background-color: #0d9d00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-sm) var(--padding-5xl);
+    font-size: var(--small-text-size);
+    color: var(--color-white);
+  }
+  .button1 {
+    top: 457px;
+    background-color: #618dff;
+    width: 201px;
+    box-sizing: border-box;
+  }
+  .c1-icon,
+  .c1-icon1 {
+    position: absolute;
+    top: 799px;
+    left: -321px;
+    border-radius: var(--br-53xl);
+    width: 634px;
+    height: 479px;
+    object-fit: cover;
+  }
+  .c1-icon1 {
+    top: -328px;
+    left: 1082px;
+    width: 835px;
+    height: 586px;
+  }
+  .checking-diagonise-page {
+    width: 100%;
+    position: relative;
+    background-color: #b2d2f8;
+    height: 991px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--small-text);
+  }
+  

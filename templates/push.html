@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='push_styles.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="loading-editing-files-page">
+      <img class="c1-icon" alt="" src="{{url_for('static', filename="c1-icon1.png")}}" />
+
+      <div class="skygovernance">SkyGovernance</div>
+      <img class="vector-icon" alt="" src="{{url_for('static', filename="file_icon.png")}}" />
+
+      <img class="vector-icon1" alt="" src="{{url_for('static', filename="file_icon.png")}}" />
+
+      <img class="vector-icon2" alt="" src="{{url_for('static', filename="file_icon.png")}}" />
+
+      <div class="namescsv">names.csv</div>
+      <div class="salescsv">sales.csv</div>
+      <div class="loading-editing-files-page-child"></div>
+      <div class="incomecsv">income.csv</div>
+      <img class="vector-icon3" alt="" src="{{url_for('static', filename="file_icon.png")}}" />
+
+      <img class="vector-icon4" alt="" src="{{url_for('static', filename="file_icon.png")}}" />
+
+      <img class="vector-icon5" alt="" src="{{url_for('static', filename="file_icon.png")}}" />
+
+      <div class="namescsv-edited">names.csv (edited)</div>
+      <a href = "{{url_for('result')}}"><div class="incomecsv-edited">income.csv (edited)</div></a>
+      <div class="salescsv-edited">sales.csv (edited)</div>
+      <img
+        class="loading-editing-files-page-item"
+        alt=""
+        src="{{url_for('static', filename="arrow.png")}}"
+      />
+
+      <img
+        class="loading-editing-files-page-inner"
+        alt=""
+        src="{{url_for('static', filename="arrow.png")}}"
+      />
+
+      <img class="arrow-icon" alt="" src="{{url_for('static', filename="arrow.png")}}" />
+
+      <img class="c1-icon1" alt="" src="{{url_for('static', filename="c1-icon1.png")}}" />
+    </div>
+  </body>
+</html>

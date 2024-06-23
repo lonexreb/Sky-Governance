@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='signin_styles.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap"
+    />
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM fully loaded and parsed');
+  var loginForm = document.getElementById('loginForm');
+  var errorMessage = document.getElementById('errorMessage');
+  
+  if (loginForm) {
+    console.log('Login form found');
+    loginForm.addEventListener('submit', function(e) {
+        if (loginForm.submit()) {
+            console.log('Form submit event triggered');
+        }
+        else {
+            console.log('Form submit event not triggered');
+        }
+            
+        console.log('Form submit event triggered');
+        e.preventDefault();
+      
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      console.log("Email:", email);
+      console.log("Password:", password);
+
+      fetch('https://f1e3-2607-f140-400-11-fc34-33b7-c7e9-a226.ngrok-free.app/signin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password
+        })
+      })
+      .then(response => {
+        console.log('Response received');
+        return response.json();
+      })
+      .then(data => {
+        if (data.success) {
+          console.log('Success:', data);
+          window.location.href = "{{ url_for('dashboard') }}";
+        } else {
+          errorMessage.textContent = data.message;
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        errorMessage.textContent = "An error occurred. Please try again.";
+      });
+    });
+  } else {
+    console.error('Login form not found');
+  }
+});
+
+      </script>
+  </head>
+  <body>
+    <div class="sign-in-frame">
+      <img class="c1-icon" alt="" id="rightcld" src="{{ url_for('static', filename='c1-icon1.png') }}" />
+      <img class="c1-icon1" alt="" src="{{ url_for('static', filename='c1-icon1.png') }}"  />
+      <div class="footer">
+        <div class="skygovernance">SkyGovernance</div>
+        <div class="divider"></div>
+      </div>
+      <b class="sign-in">Sign in</b>
+      <div class="or-create-account">Or create account</div>
+     
+      <form id="loginForm" method="POST">
+        <div class="input-field-wrapper">
+          <div class="input-field">
+            <input type="email" id="email" name="email" placeholder="Email" class="email" required>
+          </div>
+          <div class="forgot-password">Forgot password?</div>
+          <div class="input">
+            <div class="title">Password</div>
+            <div class="input-field1">
+              <input type="password" id="password" name="password" placeholder="Password" class="email" required>
+              <img class="icon" alt="" src="{{ url_for('static', filename='eye.png') }}" />
+            </div>
+            <div class="error" id="errorMessage"></div>
+          </div>
+          <div class="button-new">
+            <button type="submit" class="log-in">Log In</button>
+          </div>
+        </div>
+      </form>
+      <div class="navigation">
+        <div class="items">
+          <div class="log-in">Services</div>
+          <div class="log-in">Prices</div>
+          <div class="log-in">About Us</div>
+          <div class="button" id="buttonContainer">
+            <div class="log-in">Sign In</div>
+          </div>
+        </div>
+        <div class="skygovernance1">SkyGovernance</div>
+      </div>
+    </div>
+  </body>
+</html>

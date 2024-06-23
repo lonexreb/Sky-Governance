@@ -1,0 +1,113 @@
+.skygovernance {
+    position: absolute;
+    top: 45px;
+    left: 80px;
+    font-size: 50px;
+    line-height: 150%;
+    font-weight: 800;
+    font-family: var(--font-jetbrains-mono);
+    text-align: left;
+  }
+  .div,
+  .div1,
+  .post-governance-index,
+  .pre-governance-index {
+    position: absolute;
+    top: 373px;
+    left: 936px;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 600;
+    display: inline-block;
+    width: 289px;
+    height: 89px;
+  }
+  .div1,
+  .post-governance-index,
+  .pre-governance-index {
+    top: 262px;
+  }
+  .post-governance-index,
+  .pre-governance-index {
+    top: 373px;
+    left: 215px;
+    width: 685px;
+    height: 76px;
+  }
+  .pre-governance-index {
+    top: 263px;
+    width: 660px;
+  }
+  .download-governance-file {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .button {
+    position: absolute;
+    top: 584px;
+    left: 402px;
+    box-shadow: var(--button-shadow);
+    border-radius: 8px;
+    background-color: #618dff;
+    width: 588px;
+    height: 183px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 40px;
+    color: #fff;
+  }
+  .c1-icon,
+  .c1-icon1 {
+    position: absolute;
+    top: 726px;
+    left: -216px;
+    border-radius: var(--br-53xl);
+    width: 686px;
+    height: 530px;
+    object-fit: cover;
+  }
+  .c1-icon1 {
+    top: -179px;
+    left: 1081px;
+  }
+  .post-pushing-editing-files-pag {
+    width: 100%;
+    position: relative;
+    background-color: #b2d2f8;
+    height: 991px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-41xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+
+  body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-jetbrains-mono: "JetBrains Mono";
+  
+    /* font sizes */
+    --font-size-41xl: 60px;
+  
+    /* Colors */
+    --color-black: #000;
+  
+    /* Border radiuses */
+    --br-53xl: 72px;
+  
+    /* Effects */
+    --button-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
