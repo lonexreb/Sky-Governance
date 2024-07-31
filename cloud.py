@@ -3,10 +3,7 @@ from mysql.connector import errorcode
 
 # Database configuration
 config = {
-    'user': 'admin',
-    'password': 'Krazy!101',
-    'host': 'cloudy.cryo4gycgbmn.us-east-1.rds.amazonaws.com',
-    'database': 'cloudy'
+   
 }
 
 # Function to connect to the MySQL database
